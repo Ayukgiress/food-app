@@ -1,4 +1,4 @@
-const apiEndpoint = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
+const apiEndpoint = 'https://www.themealdb.com/api/json/v1/1/search.php?s=';
 const searchButton = document.getElementById('btn')
 const searchInput = document.getElementById('user-value')
 const searchResult = document.getElementById('result')
