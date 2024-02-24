@@ -57,11 +57,11 @@ ul {
   background: url("https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=600");
   background-position: center;
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
   max-width: 98vw;
   gap: 10px;
-  color: white;
+  color: #fff;
   overflow: scroll;
 }
 
@@ -70,7 +70,6 @@ ul {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 58vh;
   color: #070505;
   font-size: 17px;
   font-weight: bold;
@@ -98,7 +97,7 @@ ul {
   height: 7vh;
   border-radius: 5px;
   margin-left: 4px;
-  background-color: rgb(249, 251, 252);
+  background-color: #f9fbfc;
   outline: none;
 }
 
@@ -106,12 +105,11 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* flex-direction: column; */
   margin-top: 40px;
 }
 
 .cover {
-  background-color: gold;
+  background-color: #ffd700;
   height: 70vh;
   width: 35vw;
   margin-left: 34%;

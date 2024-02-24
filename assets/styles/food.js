@@ -1,16 +1,16 @@
-const apiEndpoint = 'https://www.themealdb.com/api/json/v1/1/search.php?s=';
+const apiEndpoint = 'https://www.themealdb.com/api/json/v1/1/search.php?s='
 const searchButton = document.getElementById('btn')
 const searchInput = document.getElementById('user-value')
 const searchResult = document.getElementById('result')
 
-searchButton.addEventListener('click', function() {
+searchButton.addEventListener('click', function () {
   const searchTerm = searchInput.value
-  
+
   // Call a function to fetch recipes based on the search term
-  fetchRecipes(searchTerm);
+  fetchRecipes(searchTerm)
 })
 
-function fetchRecipes(searchTerm) {
+function fetchRecipes (searchTerm) {
   fetch(apiEndpoint + searchTerm)
     .then(response => response.json())
     .then(data => {
@@ -20,9 +20,9 @@ function fetchRecipes(searchTerm) {
     .catch(error => console.error('Error fetching recipes:', error))
 }
 
-function displayRecipes(recipes) {
+function displayRecipes (recipes) {
   searchResult.innerHTML = ''
-  
+
   if (recipes) {
     recipes.forEach(recipe => {
       const recipeElement = document.createElement('div')
@@ -30,9 +30,9 @@ function displayRecipes(recipes) {
         <h2>${recipe.strMeal}</h2>
         <img src="${recipe.strMealThumb}" alt="${recipe.strMeal}" class="recipe-image">
         <p>${recipe.strInstructions}</p>
-      `;
-      searchResult.appendChild(recipeElement);
-    });
+      `
+      searchResult.appendChild(recipeElement)
+    })
   } else {
     searchResult.textContent = 'Does not exist'
   }
