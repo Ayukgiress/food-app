@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(7, 45, 54);
+  background-color: #072d36;
   margin: 0;
   padding: 0;
 }
@@ -24,7 +24,7 @@ h1 {
 }
 
 .blue {
-  background-color: rgb(190, 190, 13);
+  background-color: #bebe0d;
   height: 4vh;
   width: 2vw;
   border-radius: 50%;
